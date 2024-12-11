@@ -12,9 +12,9 @@ namespace Assignment02
 
             Console.Write("Please enter a number: ");
 
-            int userNumber;
+            int Number;
 
-            Console.WriteLine("You entered: " + userNumber);
+            Console.WriteLine("You entered: " + Number);
 
             #endregion
 
