@@ -16,7 +16,11 @@ namespace DEMO_05
         // types of function
         // 1. class member function [static function]
         // 2. object member function [non static function]
-        //
+        /// <summary>
+        /// /
+        /// </summary>
+        /// <param name="count"></param>
+        /// <param name="pattern"></param>
 
         // print (*-*)
 
