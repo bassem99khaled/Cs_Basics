@@ -23,7 +23,6 @@ namespace OOP_Demo_02
             //}
             #endregion
 
-
             #region Encapsulation
 
 
@@ -48,6 +47,37 @@ namespace OOP_Demo_02
 
 
 
+            #endregion
+
+            #region Encapsulation (Indexer)
+
+            //string name = "Ahmed";
+
+            //// char[] Name = { 'A', 'h', 'm', 'e', 'd' };
+
+            //Console.WriteLine(name[0]); // A
+
+
+            //PhoneBook note = new PhoneBook(10);
+            //note.addperson(0, "Ahmed", 11111);
+            //note.addperson(0, "Nadia", 22222);
+            //note.addperson(0, "Osama", 33333);
+            //note.addperson(0, "Amany", 44444);
+
+
+            ////note.SetNumber("Ahmed", 99999);
+            ////Console.WriteLine(note.GetNumber("Ahmed"));
+
+            ////Console.WriteLine(note["Ahmed"]);
+            ////Console.WriteLine(note.GetNumber("Ahmed");
+
+            //for(int i = 0; i < 10; i++) 
+            //{
+            //    Console.WriteLine(note[i]);
+
+            //string Name = "Agmed";
+            //Console.WriteLine(Name[0]); // A
+            //Name[0] = 'x'; // not allawed
             #endregion
         }
     }
