@@ -79,6 +79,30 @@ namespace OOP_Demo_02
             //Console.WriteLine(Name[0]); // A
             //Name[0] = 'x'; // not allawed
             #endregion
+
+            #region Class
+            //Car C1;
+
+            /////Declare for rerference of type "Car".
+            ///// this Referenec is refereing to the Default Value of The Reference Types = Null.
+            ///// this reference 'C1' Cab refer to an object of type "Car" or of anther type "inheritance  from car".
+            ///// CLR will Allocate 4 UnInitialized bytes in Stack for the Reference 'C1'.
+            /////CLR will Allocate 0 Bytes in HEAP.
+            /////
+            //C1 = new Car(10102 , "Nissan Sentra 2025" , 180);
+            //// new
+            ///// 1. Allocate Required  Number of bytes for the allocated object in Heap = 16 bytes
+            ///// 2. Initialize { cross out } the Allocated Bytes for each and every Attribute with its Default DataType value.
+            ///// 3. Call User-Defined Constructor {if Exists}
+            ///// 4. Return the address of the allocarted object in heap ti the reference 'C1'
+
+            //Console.WriteLine("****************");
+            //Console.WriteLine(C1); // Easy to use more than the next Line
+            ////Console.WriteLine(C1.ToString());
+
+            
+
+            #endregion
         }
     }
 }
