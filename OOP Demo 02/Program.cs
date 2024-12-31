@@ -1,4 +1,6 @@
-﻿namespace OOP_Demo_02
+﻿using OOP_Demo_02.Encapsulation;
+
+namespace OOP_Demo_02
 {
     internal class Program
     {
@@ -19,6 +21,33 @@
 
             //    Console.WriteLine(P1.ToString());  // x= 1 , y = 2
             //}
+            #endregion
+
+
+            #region Encapsulation
+
+
+            //Employee employee = new Employee( 100, " Ahmed Nasr" , 10_000);
+
+            //{
+            //    Name = " Ahmed Mahmoud"
+            //}
+
+            //employee.id = 2002; // set id throgh the field itself
+
+            //Console.WriteLine(employee.id);
+            //Console.WriteLine(employee.code); // get id throght the field itself
+
+
+            //employee.SetId(2002); // setter
+
+            //employee.Name = " Ibrahim ali";
+            //Console.WriteLine(employee.Name);
+
+            //Console.WriteLine(employee.Getid); // Getter
+
+
+
             #endregion
         }
     }
