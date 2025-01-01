@@ -14,11 +14,12 @@ namespace OOP_Assignment_02
         DBA
     }
 
-    internal class Employee
+    internal class Employee 
+
     {
-    
-            #region propeties
-            public int ID { get; set; }
+
+        #region propeties
+        public int ID { get; set; }
             public string Name { get; set; }
             private char gender;
             public char Gender
@@ -35,24 +36,34 @@ namespace OOP_Assignment_02
             public decimal Salary { get; set; }
             public DateTime HireDate { get; set; }
 
-            #endregion
+        public static int BoxingCount { get;  set; } 
+        public static int UnboxingCount { get;  set; } 
 
-            #region Constructor
 
-            public Employee(int id, string name, char gender, SecurityLevel security, decimal salary, DateTime hireDate)
+        #endregion
+
+        #region Constructor
+
+        public Employee(int id, string name, char gender, SecurityLevel security, decimal salary, DateTime hireDate)
             {
                 ID = id;
                 Name = name;
-                Gender = gender; // Setter ensures validation
+                Gender = gender; 
                 Security = security;
                 Salary = salary;
                 HireDate = hireDate;
             }
 
-            #endregion
+        public int CompareTo(Employee compare)
+        {
+            return HireDate.CompareTo(compare.HireDate);
+        }
 
-            #region Method
-            public override string ToString()
+
+        #endregion
+
+        #region Method
+        public override string ToString()
             {
                 return $"ID: {ID}, Name: {Name}, Gender: {Gender}, Security Level: {Security}, Salary: {Salary}, Hire Date: {HireDate:yyyy-MM-dd}";
             }

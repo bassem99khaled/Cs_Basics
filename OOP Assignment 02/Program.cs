@@ -6,6 +6,8 @@ using OOP_Assignment_02.Company;
 using System.ComponentModel;
 using System.Diagnostics.Metrics;
 using System.Threading;
+using System.Diagnostics;
+using System.Timers;
 
 namespace OOP_Assignment_02
 {
@@ -155,10 +157,10 @@ namespace OOP_Assignment_02
 
             //try
             //{
-                
+
             //    Employee[] EmpArr = new Employee[3];
 
-              
+
             //    EmpArr[0] = new Employee(
             //        id: 1,
             //        name: "Bassem",
@@ -168,7 +170,7 @@ namespace OOP_Assignment_02
             //        hireDate: new DateTime(2019, 3, 10)
             //    );
 
-                
+
             //    EmpArr[1] = new Employee(
             //        id: 2,
             //        name: "Khaled",
@@ -178,7 +180,7 @@ namespace OOP_Assignment_02
             //        hireDate: new DateTime(2021, 7, 5)
             //    );
 
-                
+
             //    EmpArr[2] = new Employee(
             //        id: 3,
             //        name: "Haneen",
@@ -202,6 +204,83 @@ namespace OOP_Assignment_02
             #endregion
 
 
+            #region  4- Sort the employees based on their hire date then Print the sorted array.
+            //While sorting(how many times Boxing and Unboxing process has occurred)
+
+            try
+            {
+
+                Employee[] EmpArr = new Employee[3];
+
+
+                EmpArr[0] = new Employee(
+                    id: 1,
+                    name: "Bassem",
+                    gender: 'M',
+                    security: SecurityLevel.Developer,
+                    salary: 80000,
+                    hireDate: new DateTime(2019, 3, 10));
+
+
+                EmpArr[1] = new Employee(
+                    id: 2,
+                    name: "Khaled",
+                    gender: 'M',
+                    security: SecurityLevel.Guest,
+                    salary: 30000,
+                    hireDate: new DateTime(2021, 7, 5));
+
+
+                EmpArr[2] = new Employee(
+                    id: 3,
+                    name: "Haneen",
+                    gender: 'F',
+                    security: SecurityLevel.DBA,
+                    salary: 90000,
+                    hireDate: new DateTime(2018, 1, 12));
+
+
+
+
+                object[] objArray = new object[EmpArr.Length];
+
+
+                for (int i = 0; i < EmpArr.Length; i++)
+                {
+                    objArray[i] = EmpArr[i];
+                   
+                }
+
+                Array.Sort(objArray);
+
+                for (int i = 0; i < objArray.Length; i++)
+                {
+                    EmpArr[i] = (Employee)objArray[i];
+                    Employee.BoxingCount++;
+
+
+                }
+
+
+                Console.WriteLine("\nSorted Employee Array (by Hire Date):");
+                foreach (Employee employee in EmpArr)
+                {
+                    Console.WriteLine(employee);
+
+                }
+
+                Console.WriteLine($"\nBoxing operations: {Employee.BoxingCount}");
+                Console.WriteLine($"Unboxing operations: {Employee.UnboxingCount}");
+
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            #endregion
             #endregion
 
         }
