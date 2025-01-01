@@ -1,4 +1,5 @@
 ﻿using OOP_Demo_02.Encapsulation;
+using OOP_Demo_02.Inheritance;
 
 namespace OOP_Demo_02
 {
@@ -100,9 +101,29 @@ namespace OOP_Demo_02
             //Console.WriteLine(C1); // Easy to use more than the next Line
             ////Console.WriteLine(C1.ToString());
 
-            
+
 
             #endregion
+
+            #region inheritance
+
+            ///Parent parent = new Parent(1, 2);
+            ///parent.x = 11;
+            ///parent.y = 22;
+            ///Console.WriteLine(parent);
+            ///Console.WriteLine($"Product = {parent.product()}");
+
+
+           /// Child child = new Child(1, 2, 3);
+           /// child.x = 11;
+           /// child.y = 22;   
+           /// child.z = 33;
+           /// Console.WriteLine(child.ToString());
+           /// Console.WriteLine($"Product = {child.product()}");
+           
+            #endregion
+
+
         }
     }
 }
