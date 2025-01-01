@@ -104,35 +104,48 @@ namespace OOP_Assignment_02
 
 
 
-        //     try
-        //    {
-                
-        //        Employee employee = new Employee(
-        //            id: 1,
-        //            name: "Bassem khaled",
-        //            gender: 'M',
-        //            security: SecurityLevel.Developer,
-        //            salary: 75000,
-        //            hireDate: new DateTime(2020, 5, 1)
-        //        );
+            //     try
+            //    {
+
+            //        Employee employee = new Employee(
+            //            id: 1,
+            //            name: "Bassem khaled",
+            //            gender: 'M',
+            //            security: SecurityLevel.Developer,
+            //            salary: 75000,
+            //            hireDate: new DateTime(2020, 5, 1)
+            //        );
 
 
-        //Console.WriteLine(employee);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Error: {ex.Message}");
-        //    }
+            //Console.WriteLine(employee);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine($"Error: {ex.Message}");
+            //    }
 
 
-        #endregion
+            #endregion
+
+            #region 2- Develop a Class to represent the Hiring Date Data:	Consisting of fields to hold the day, month and Years.
+
+            //try
+            //{
+             
+            //    HiringDate hireDate = new HiringDate(1, 1, 2025);
+            //    Console.WriteLine($"Hiring Date: {hireDate}");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //}
+
+            #endregion
 
 
 
+            #endregion
 
-
-        #endregion
-
-    }
+        }
     }
 }
