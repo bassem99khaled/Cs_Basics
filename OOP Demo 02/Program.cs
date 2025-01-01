@@ -114,16 +114,21 @@ namespace OOP_Demo_02
             ///Console.WriteLine($"Product = {parent.product()}");
 
 
-           /// Child child = new Child(1, 2, 3);
-           /// child.x = 11;
-           /// child.y = 22;   
-           /// child.z = 33;
-           /// Console.WriteLine(child.ToString());
-           /// Console.WriteLine($"Product = {child.product()}");
-           
+            /// Child child = new Child(1, 2, 3);
+            /// child.x = 11;
+            /// child.y = 22;   
+            /// child.z = 33;
+            /// Console.WriteLine(child.ToString());
+            /// Console.WriteLine($"Product = {child.product()}");
+
             #endregion
 
+            #region Association
 
+
+
+
+            #endregion 
         }
     }
 }
