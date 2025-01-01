@@ -1,4 +1,10 @@
-﻿namespace OOP_Assignment_02
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Reflection.Emit;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using OOP_Assignment_02.Company;
+
+namespace OOP_Assignment_02
 {
     internal class Program
     {
@@ -60,7 +66,7 @@
 
             //Person01[] persons = new Person01[3];
 
-         
+
             //for (int i = 0; i < 3; i++)
             //{
             //    Console.WriteLine($"Enter details for person {i + 1}:");
@@ -71,7 +77,7 @@
             //    persons[i] = new Person01 { Name = name, Age = age };
             //}
 
-          
+
             //Person01 oldest = persons[0];
             //foreach (var person in persons)
             //{
@@ -82,10 +88,51 @@
             //}
 
             //Console.WriteLine($"The oldest person is {oldest.Name}, Age: {oldest.Age}");
-        
+
+
+            #endregion
+            #endregion
+
+            #region Part 02
+
+            #region 1.	Design and implement a Class for the employees in a company:
+            //        Notes:
+            //●	Employee is identified by an ID, Name, security level, salary, hire date and Gender.
+            //●	We need to restrict the Gender field to be only M or F[Male or Female]
+            //●	Assign the following security privileges to the employee(guest, Developer, secretary and DBA) in a form of Enum.
+            //●	We want to provide the Employee Class to represent Employee data in a string Form(override ToString()), display employee salary in a currency format. [Use String.Format() Function].
+
+
+
+        //     try
+        //    {
+                
+        //        Employee employee = new Employee(
+        //            id: 1,
+        //            name: "Bassem khaled",
+        //            gender: 'M',
+        //            security: SecurityLevel.Developer,
+        //            salary: 75000,
+        //            hireDate: new DateTime(2020, 5, 1)
+        //        );
+
+
+        //Console.WriteLine(employee);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error: {ex.Message}");
+        //    }
+
 
         #endregion
+
+
+
+
+
         #endregion
+
     }
     }
 }
