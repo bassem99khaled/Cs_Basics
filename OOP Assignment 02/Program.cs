@@ -3,6 +3,9 @@ using System.Reflection.Emit;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using OOP_Assignment_02.Company;
+using System.ComponentModel;
+using System.Diagnostics.Metrics;
+using System.Threading;
 
 namespace OOP_Assignment_02
 {
@@ -131,7 +134,7 @@ namespace OOP_Assignment_02
 
             //try
             //{
-             
+
             //    HiringDate hireDate = new HiringDate(1, 1, 2025);
             //    Console.WriteLine($"Hiring Date: {hireDate}");
             //}
@@ -142,6 +145,61 @@ namespace OOP_Assignment_02
 
             #endregion
 
+            #region 3 - Create an array of Employees with size three a DBA, Guest and the third one is security officer who have full permissions. (Employee[] EmpArr;)
+
+            //Notes:
+            //●	Implement All the Necessary Member Functions on the Class(Getters, Setters)
+            //●	Define all the Necessary Constructors for the Class
+            //●	Allow NO RUNTIME errors if the user inputs any data
+            //●	Write down all the necessary Properties(Instead of setters and getters)
+
+            //try
+            //{
+                
+            //    Employee[] EmpArr = new Employee[3];
+
+              
+            //    EmpArr[0] = new Employee(
+            //        id: 1,
+            //        name: "Bassem",
+            //        gender: 'M',
+            //        security: SecurityLevel.Developer,
+            //        salary: 80000,
+            //        hireDate: new DateTime(2019, 3, 10)
+            //    );
+
+                
+            //    EmpArr[1] = new Employee(
+            //        id: 2,
+            //        name: "Khaled",
+            //        gender: 'M',
+            //        security: SecurityLevel.Guest,
+            //        salary: 30000,
+            //        hireDate: new DateTime(2021, 7, 5)
+            //    );
+
+                
+            //    EmpArr[2] = new Employee(
+            //        id: 3,
+            //        name: "Haneen",
+            //        gender: 'F',
+            //        security: SecurityLevel.DBA,
+            //        salary: 90000,
+            //        hireDate: new DateTime(2018, 1, 12)
+            //    );
+
+            //    Console.WriteLine("Employee Details:");
+            //    foreach (var employee in EmpArr)
+            //    {
+            //        Console.WriteLine(employee);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //}
+
+            #endregion
 
 
             #endregion
