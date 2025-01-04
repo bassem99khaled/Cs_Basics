@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using Demo_03.Casting_Operator_OverLoading;
 namespace Demo_03.Operators_Overloading
 {
 
@@ -68,13 +69,13 @@ namespace Demo_03.Operators_Overloading
                 #endregion
 
                 #region Unary Operators
-                Complex C1 = new Complex() { Real = 2, Imag = 4 };
-                Complex C2 = new Complex() { Real = 3, Imag = 5 };
+                //Complex C1 = new Complex() { Real = 2, Imag = 4 };
+                //Complex C2 = new Complex() { Real = 3, Imag = 5 };
 
-                Complex C3 = ++C1; Console.WriteLine("After ++C1");
+                //Complex C3 = ++C1; Console.WriteLine("After ++C1");
 
-                Console.WriteLine($"C1={C1}");
-                Console.WriteLine($"C3 = {C3}");
+                //Console.WriteLine($"C1={C1}");
+                //Console.WriteLine($"C3 = {C3}");
 
                 #endregion
 
@@ -120,12 +121,32 @@ namespace Demo_03.Operators_Overloading
                 //Object O1 = "Ahmed";
 
                 //string X = (string)O1;
-                
+
                 //Console.WriteLine(X);
 
                 #endregion
                 #endregion
+
+                #region Casting Operators overlaoding - Business Need [Mapping]
+
+           //User user = new User();
+           //     {
+           //       Id = 12345
+           //       fullName = "Ahmed Nasr"
+           //       Email = "Ahmed.nasr@linkedv.com"
+           //      password = "P@sswOrd"
+           //      securityStmp = Guid.NewGuid()
+           //     };
+
+           //     // Mapping
+           //     UserViewModel userViewModel = (UserViewModel) user;
+
+           //     Console.WriteLine(userViewModel.Id);
+           //     Console.WriteLine(userViewModel.Email);
+           //     Console.WriteLine(userViewModel.FName);
+           //     Console.WriteLine(userViewModel.LName);
                 #endregion
+#endregion
             }
         }
     }
