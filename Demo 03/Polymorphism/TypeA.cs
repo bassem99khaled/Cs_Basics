@@ -48,10 +48,11 @@ namespace Demo_03.Polymorphism
 
 
         // 2. Apply Overriding using "Override" Keyword =>Method must be non-private and Virtual in first apperance
-        public override void MyFun02()  /*  Dynamic Binding Method  */
+        public override void MyFun02()  /*  Dynamic Binding Method [Late Binding] */
         {
             Console.WriteLine($" MyFun02 => TypeB: A = {A} , B = {B}");
         }
+       
         #endregion
     }
 

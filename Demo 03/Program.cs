@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 using Demo_03.Casting_Operator_OverLoading;
-namespace Demo_03.Polymorphism
+using Demo_03.Polymorphism;
 
 namespace Demo_03.Operators_Overloading
 {
@@ -169,8 +169,49 @@ namespace Demo_03.Operators_Overloading
                 #endregion
 
 
+                #region What is Binding ?
+                //Binding as Behaviour
+                // 1. Static Binding
+                // 2. Dynamic Binding
+
+
+                // Referance from parent = Object From Child
+
+                //TypeA RefBase = new TypeB(1, 2);
+
+                //RefBase.A = 11;
+                ////refBase.B = 22;
+                //RefBase.MyFun01();  // I am Base  [parent]
+                                      // Static Binding [ Early Binding ]
+                                      // Compiler will Bind Function Call Based On Reference not Object
+                                      // At Compilation Time.
+
+
+                //RefBase.MyFun02();  // TypeB: A = 11 , B = 2
+                                      // Dynamic Binding Method [Late Binding]
+                                      // CLR will Bind function Call Based on Object not reference
+                                      // At Runtime
+
+
+
+                //TypeA typeA;
+                //typeA = new TypeA(1);
+                //typeA = new TypeB(1, 2);
+                //typeA = new TypeC (1,2,3);
+
+                //TypeB typeB = (TypeB) typeA;
+
+                //Console.WriteLine(typeB.A);
+                //Console.WriteLine(typeB.B);
+
+
+                #endregion
+
+
+
+
             }
-        }
+
         }
     }
 }
