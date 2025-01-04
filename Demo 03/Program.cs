@@ -9,7 +9,6 @@ namespace Demo_03.Operators_Overloading
             static void Main(string[] args)
             {
 
-                #region OOP Pillars 1. PolyMorphism
 
                 #region OverLoading
 
@@ -79,6 +78,15 @@ namespace Demo_03.Operators_Overloading
 
                 #endregion
 
+                #region Comparison Operators [realational ]
+
+                //if (C1 > C2)
+
+                //    Console.WriteLine("C1 is Greater than C2");
+                //else if (C1 < C2)
+                //    Console.WriteLine("C1 is  Less than C2");
+                //else
+                //    Console.WriteLine("C1 Equal C2");
                 #endregion
             }
         }

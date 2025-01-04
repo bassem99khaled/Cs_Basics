@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,26 @@ namespace Demo_03.Operators_Overloading
         {
             return $"{Real} + {Imag}";
         }
+
+        #region Comparison Operators [realational ]
+        public static bool operator >(Complex left, Complex Right)
+        {
+            if (left?.Real == Right?.Real)
+                return left?.Imag > Right?.Imag;
+            else
+                return left?.Real > Right?.Real;
+
+        }
+        public static bool operator < (Complex left , Complex Right)
+        {
+            if (left?.Real == Right?.Real) 
+                  return left?.Imag < Right?.Imag;  
+            else
+                 return left?.Real < Right?.Real;
+
+        }
+
+        #endregion
         #endregion
 
     }
