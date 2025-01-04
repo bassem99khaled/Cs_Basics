@@ -1,5 +1,7 @@
 ﻿using System.Numerics;
 using Demo_03.Casting_Operator_OverLoading;
+namespace Demo_03.Polymorphism
+
 namespace Demo_03.Operators_Overloading
 {
 
@@ -129,25 +131,46 @@ namespace Demo_03.Operators_Overloading
 
                 #region Casting Operators overlaoding - Business Need [Mapping]
 
-           //User user = new User();
-           //     {
-           //       Id = 12345
-           //       fullName = "Ahmed Nasr"
-           //       Email = "Ahmed.nasr@linkedv.com"
-           //      password = "P@sswOrd"
-           //      securityStmp = Guid.NewGuid()
-           //     };
+                //User user = new User();
+                //     {
+                //       Id = 12345
+                //       fullName = "Ahmed Nasr"
+                //       Email = "Ahmed.nasr@linkedv.com"
+                //      password = "P@sswOrd"
+                //      securityStmp = Guid.NewGuid()
+                //     };
 
-           //     // Mapping
-           //     UserViewModel userViewModel = (UserViewModel) user;
+                //     // Mapping
+                //     UserViewModel userViewModel = (UserViewModel) user;
 
-           //     Console.WriteLine(userViewModel.Id);
-           //     Console.WriteLine(userViewModel.Email);
-           //     Console.WriteLine(userViewModel.FName);
-           //     Console.WriteLine(userViewModel.LName);
+                //     Console.WriteLine(userViewModel.Id);
+                //     Console.WriteLine(userViewModel.Email);
+                //     Console.WriteLine(userViewModel.FName);
+                //     Console.WriteLine(userViewModel.LName);
                 #endregion
-#endregion
+                #endregion
+
+                #region OOP Pillars 3. PolyMorphism 2.Overriding  
+
+                //TypeA typeA = new TypeB(1, 2);
+                //    type.A = 11;
+                //    type.B = 22;
+                //typeA.MyFun01();  // I am Base [Parent]
+                //typeA.MyFun02();  // TypeA; A{11}
+
+
+                //TypeB typeB = new TypeB(1, 2);
+                //typeB.A = 11;
+                //typeB.B = 22;
+
+                //typeB.MyFun01(); // I am derived{Child]
+                //typeB.MyFun02(); // TypeB : A= {11} , B = {22}
+
+                #endregion
+
+
             }
+        }
         }
     }
 }
