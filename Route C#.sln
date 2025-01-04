@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP Demo 01", "OOP Demo 01\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP Demo 02", "OOP Demo 02\OOP Demo 02.csproj", "{22D75264-D330-4182-AE47-FF7BC0FC0923}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo 03", "Demo 03\Demo 03.csproj", "{3A6C6927-6CE6-415D-8CC1-D1617DEF1B8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP Demo 03", "Demo 03\OOP Demo 03.csproj", "{3A6C6927-6CE6-415D-8CC1-D1617DEF1B8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
