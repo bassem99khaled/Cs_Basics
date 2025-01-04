@@ -9,7 +9,7 @@ namespace Demo_03.Operators_Overloading
             static void Main(string[] args)
             {
 
-
+                #region Operators OverLoading
                 #region OverLoading
 
                 // static int Sum02Numbers(int X , int Y)
@@ -87,6 +87,44 @@ namespace Demo_03.Operators_Overloading
                 //    Console.WriteLine("C1 is  Less than C2");
                 //else
                 //    Console.WriteLine("C1 Equal C2");
+                #endregion
+
+
+                #region Casting Operator Overloading
+                #region Example 01
+
+                //Complex C1 = new Complex() { Real = 4 , Imag = 5 };
+
+                //int Y = (int) C1; // Explicit Casting
+
+
+                //Console.WriteLine($"Y = {Y}");
+
+                //object O1 = 5;
+
+                //int X = (int) O1;
+
+                //Console.WriteLine(X);
+
+                #endregion
+
+                #region Example 02
+
+                //Complex C1 = new Complex() {  Real = 4 , Imag = 5 };
+
+                //string Y = /*{String}*/ C1; // implicit Casting
+
+                //Console.WriteLine($"Y = {Y}");
+
+
+                //Object O1 = "Ahmed";
+
+                //string X = (string)O1;
+                
+                //Console.WriteLine(X);
+
+                #endregion
+                #endregion
                 #endregion
             }
         }

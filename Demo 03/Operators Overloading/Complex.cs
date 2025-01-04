@@ -78,6 +78,23 @@ namespace Demo_03.Operators_Overloading
         }
 
         #endregion
+
+        #region Casting Operators OverLoading
+
+        // OverLoading Casting Operator : Create Non-Private Class Member Function
+
+        public static /*int*/ explicit operator int(Complex C)
+        {
+            return C?.Real ?? 0;
+        }
+
+        public static /*string*/  implicit operator string(Complex C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
+
+        #endregion
+
         #endregion
 
     }
