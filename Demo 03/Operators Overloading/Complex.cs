@@ -9,7 +9,7 @@ namespace Demo_03.Operators_Overloading
     internal class Complex
     {
 
-        public int Real { get ; set; }
+        public int Real { get; set; }
 
         public int Imag { get; set; }
 
@@ -19,19 +19,19 @@ namespace Demo_03.Operators_Overloading
         // OverLoading Operators ; must be Non-Private Class Member Function
 
         #region Binary Operators
-        public static Complex operator + (Complex left , Complex Right)
+        public static Complex operator +(Complex left, Complex Right)
         {
 
             return new Complex()
             {
-                Real = (left?.Real ?? 0) + (Right?.Real ?? 0) ,
+                Real = (left?.Real ?? 0) + (Right?.Real ?? 0),
                 Imag = (left?.Imag ?? 0) + (Right?.Imag ?? 0),
             };
             // left?.Real
             // Left != Null ? left.Real : null
         }
 
-        public static Complex operator - (Complex left, Complex Right)
+        public static Complex operator -(Complex left, Complex Right)
         {
 
             return new Complex()
@@ -39,11 +39,25 @@ namespace Demo_03.Operators_Overloading
                 Real = (left?.Real ?? 0) - (Right?.Real ?? 0),
                 Imag = (left?.Imag ?? 0) - (Right?.Imag ?? 0),
             };
+        }
 
+        #endregion
+
+        #region Unary Operators
+        public static Complex operator ++(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) + 1,
+                Imag = (C?.Imag ?? 0)
+            };
+        }
         #endregion
         public override string ToString()
         {
             return $"{Real} + {Imag}";
         }
+        #endregion
+
     }
 }

@@ -57,7 +57,7 @@ namespace Demo_03.Operators_Overloading
                 //Complex C3 = default; // Null
 
 
-            
+
                 //C3 = C1 + C2;
 
                 //Complex C4 = C1 + C2 + C3;
@@ -68,9 +68,18 @@ namespace Demo_03.Operators_Overloading
                 //Console.WriteLine($" C3 = {C3}");
                 #endregion
 
+                #region Unary Operators
+                Complex C1 = new Complex() { Real = 2, Imag = 4 };
+                Complex C2 = new Complex() { Real = 3, Imag = 5 };
+
+                Complex C3 = ++C1; Console.WriteLine("After ++C1");
+
+                Console.WriteLine($"C1={C1}");
+                Console.WriteLine($"C3 = {C3}");
+
                 #endregion
 
-
+                #endregion
             }
         }
     }
