@@ -31,31 +31,51 @@ namespace OOP_Assginment_03
             //	A constructor that accepts width and height as integers.
             //	A constructor that accepts a single integer and sets both width and height to that value.
 
-   
+
+
+
+            //Rectangle rect1 = new Rectangle(); 
+            //Rectangle rect2 = new Rectangle(10, 20); 
+            //Rectangle rect3 = new Rectangle(15); 
+
+
+            //Console.WriteLine("Rectangle 1:");
+            //rect1.DisplayDimensions();
+
+            //Console.WriteLine("\nRectangle 2:");
+            //rect2.DisplayDimensions();
+
+            //Console.WriteLine("\nRectangle 3:");
+            //rect3.DisplayDimensions();
+
+
+            #endregion
+
+
+            #region 3-Define a class Complex Number that represents a complex number with real and imaginary parts.
+            //Overload the +, - operator to add and subtract two complex numbers.
+
+
+
            
 
-                //Rectangle rect1 = new Rectangle(); 
-                //Rectangle rect2 = new Rectangle(10, 20); 
-                //Rectangle rect3 = new Rectangle(15); 
-
                 
-                //Console.WriteLine("Rectangle 1:");
-                //rect1.DisplayDimensions();
+                //ComplexNumber c1 = new ComplexNumber(3, 4);
+                //ComplexNumber c2 = new ComplexNumber(1, -2);
 
-                //Console.WriteLine("\nRectangle 2:");
-                //rect2.DisplayDimensions();
+               
+                //ComplexNumber sum = c1 + c2;
 
-                //Console.WriteLine("\nRectangle 3:");
-                //rect3.DisplayDimensions();
-     
+              
+                //ComplexNumber difference = c1 - c2;
 
-    #endregion
-
-
-    #region
-
-
-
+            
+                //Console.WriteLine($"Complex Num 1: {c1}");
+                //Console.WriteLine($"Complex Num 2: {c2}");
+                //Console.WriteLine($"Sum: {sum}");
+                //Console.WriteLine($"Difference: {difference}");
+            
+      
     #endregion
 
     #region
