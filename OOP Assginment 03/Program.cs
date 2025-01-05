@@ -126,37 +126,55 @@ namespace OOP_Assginment_03
             //derived2Direct.DisplayMessage(); 
 
 
-//            Binding Behavior:
+            //            Binding Behavior:
 
             //override: Supports runtime polymorphism[dynamic binding]. The method call depends on the actual object type, not the reference type.
-            
+
             //new: [static binding]. The method call depends on the reference type, not the object type.
 
 
             #endregion
 
-        #region
+
+            #region Part 02
+
+
+            #region 1-Define Class Duration To include Three Attributes Hours, Minutes and Seconds.
 
 
 
-        #endregion
+        
+           
+                //Duration duration1 = new Duration(1, 120, 360);
+                //duration1.DisplayDuration(); 
+
+    
+                //Duration duration2 = new Duration();
+                //duration2.DisplayDuration(); 
+      
 
 
 
-        #region
 
-        #endregion
-
-
-        #region
+    #endregion
 
 
-        #endregion
 
-        #region
+    #region
 
-        #endregion
+    #endregion
 
-        }
+
+    #region
+
+
+    #endregion
+
+    #region
+
+    #endregion
+
+    #endregion
+}
     }
 }
