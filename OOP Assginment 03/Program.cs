@@ -83,27 +83,48 @@ namespace OOP_Assginment_03
             // Ensure that the Manager class also calls the Work method of the Employee class within its overridden method.
 
 
-   
-      
 
+
+
+
+
+            //Employee emp = new Employee();
+            //emp.Work();
+
+
+            //Manager mgr = new Manager();
+            //mgr.Work();
+
+
+
+
+            #endregion
+
+
+
+            #region 5- Create a base class BaseClass with a virtual method DisplayMessage that prints "Message from BaseClass".
+            //  Create a derived class DerivedClass1 that overrides the DisplayMessage method using the override keyword.
+            //  Create another derived class DerivedClass2 that hides the DisplayMessage method using the new keyword.
+            //  And explain the difference between using override and new (using binding behavior)	 
+
+
+      
       
              
-                Employee emp = new Employee();
-                emp.Work();
+                //BaseClass baseObj = new BaseClass();
+                //baseObj.DisplayMessage(); 
 
-              
-                Manager mgr = new Manager();
-                mgr.Work();
-       
+                //BaseClass derived1 = new DerivedClass1();
+                //derived1.DisplayMessage();
 
+               
+                //BaseClass derived2 = new DerivedClass2();
+                //derived2.DisplayMessage();
 
-
-    #endregion
-
-
-
-    #region
-
+          
+                //DerivedClass2 derived2Direct = new DerivedClass2();
+                //derived2Direct.DisplayMessage(); 
+        
 
 
     #endregion
