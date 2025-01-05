@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿using System.Diagnostics;
+using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using Demo_03.Casting_Operator_OverLoading;
 using Demo_03.Polymorphism;
 
@@ -7,6 +9,8 @@ namespace Demo_03.Operators_Overloading
 
     namespace Demo_03
     {
+
+
         internal class Program
         {
             static void Main(string[] args)
@@ -150,6 +154,8 @@ namespace Demo_03.Operators_Overloading
                 #endregion
                 #endregion
 
+
+
                 #region OOP Pillars 3. PolyMorphism 2.Overriding  
 
                 //TypeA typeA = new TypeB(1, 2);
@@ -182,15 +188,15 @@ namespace Demo_03.Operators_Overloading
                 //RefBase.A = 11;
                 ////refBase.B = 22;
                 //RefBase.MyFun01();  // I am Base  [parent]
-                                      // Static Binding [ Early Binding ]
-                                      // Compiler will Bind Function Call Based On Reference not Object
-                                      // At Compilation Time.
+                // Static Binding [ Early Binding ]
+                // Compiler will Bind Function Call Based On Reference not Object
+                // At Compilation Time.
 
 
                 //RefBase.MyFun02();  // TypeB: A = 11 , B = 2
-                                      // Dynamic Binding Method [Late Binding]
-                                      // CLR will Bind function Call Based on Object not reference
-                                      // At Runtime
+                // Dynamic Binding Method [Late Binding]
+                // CLR will Bind function Call Based on Object not reference
+                // At Runtime
 
 
 
@@ -207,11 +213,140 @@ namespace Demo_03.Operators_Overloading
 
                 #endregion
 
+                #region Binding is a Behaviour
+
+
+                ///    class Employee
+                ///    {
 
 
 
+                ///        public int Id { get; set; }
+                ///        public string Name { get; set; }
+
+                ///        public int? Age { get; set; }
+
+
+                ///        public void MyFun01()
+                ///        {
+                ///            Console.WriteLine($"Employee: Id: {Id}, Name: {Name} , Age = {Age}");
+                ///        }
+
+                ///    }
+
+                ///class FullTimeEmployee : Employee 
+
+                ///        { 
+
+                ///            public decimal Salary { get; set; }
+
+                ///            public new void Myfun01()
+                ///            {
+                ///                Console.WriteLine("I Am Employee");
+                ///            }
+
+                ///        public override void MyFun02()
+                ///        {
+                ///            Console.WriteLine($"FullTime Employee: Id : {Id} , Name : {Name} , Age : {Age} , Salary : {Salary}");
+                ///        }
+                ///        }
+
+                ///    class PartTimeEmployee : Employee
+
+                ///    {
+                ///        public decimal HourRate { get; set; }
+
+                ///        public new void MyFun01()
+                ///        {
+                ///            Console.WriteLine("I am PartTime Employee");
+                ///        }
+
+                ///        public override void MyFun02()
+                ///        {
+                ///            Console.WriteLine($"PartTime Employee Id = {Id} , Name = {Name} , Age = {Age} , Hourrate = {HourRate}");
+                ///        }
+                ///    }  namespace Demo_03
+
+                ///    class Employee
+                ///    {
+
+
+                ///        public int Id { get; set; }
+                ///        public string Name { get; set; }
+
+                ///        public int? Age { get; set; }
+
+                ///        public void MyFun01()
+                ///        {
+                ///            Console.WriteLine($"Employee: Id: {Id}, Name: {Name} , Age = {Age}");
+                ///        }
+
+                ///    }
+
+                ///class FullTimeEmployee : Employee 
+
+                ///        { 
+
+                ///            public decimal Salary { get; set; }
+
+                ///            public new void Myfun01()
+                ///            {
+                ///                Console.WriteLine("I Am Employee");
+                ///            }
+
+                ///        public override void MyFun02()
+                ///        {
+                ///            Console.WriteLine($"FullTime Employee: Id : {Id} , Name : {Name} , Age : {Age} , Salary : {Salary}");
+                ///        }
+                ///        }
+
+                ///    class PartTimeEmployee : Employee
+
+                ///    {
+                ///        public decimal HourRate { get; set; }
+
+                ///        public new void MyFun01()
+                ///        {
+                ///            Console.WriteLine("I am PartTime Employee");
+                ///        }
+
+                ///        public override void MyFun02()
+                ///        {
+                ///            Console.WriteLine($"PartTime Employee Id = {Id} , Name = {Name} , Age = {Age} , Hourrate = {HourRate}");
+                ///        }
+                ///    }
+
+
+
+                ///FullTimeEmployee fullTimeEmployee = new FullTimeEmployee();
+                ///  processEmployee(FullTimeEmployee);
+
+
+                //    public static void ProcessEmployee(Employee employee) /*employee = new FullTimeEmployee*/
+                //{
+                //    if (employee is not null)
+                //    {
+
+                //        employee.MyFun01();  // I am full time employee
+                //        employee.MyFun02();  // fullTime Emplpuee id = 10 , Name = Ahmed , Age = 23 , Salary = 5_000
+                //    }
+                //}
+
+
+                //PartTimeEmployee partTimeEmployee = new PartTimeEmployee()
+                //{
+
+                //    Id = 20,
+                //    Name = "Yassin",
+                //    Age = 28,
+                //    HourRate = 120,
+                //};
+                //ProcessEmployee(PartTimeEmployee);
+
+
+
+                #endregion
             }
-
+            }
         }
     }
-}
