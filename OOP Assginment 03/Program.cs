@@ -57,28 +57,45 @@ namespace OOP_Assginment_03
 
 
 
-           
 
-                
-                //ComplexNumber c1 = new ComplexNumber(3, 4);
-                //ComplexNumber c2 = new ComplexNumber(1, -2);
 
-               
-                //ComplexNumber sum = c1 + c2;
+
+            //ComplexNumber c1 = new ComplexNumber(3, 4);
+            //ComplexNumber c2 = new ComplexNumber(1, -2);
+
+
+            //ComplexNumber sum = c1 + c2;
+
+
+            //ComplexNumber difference = c1 - c2;
+
+
+            //Console.WriteLine($"Complex Num 1: {c1}");
+            //Console.WriteLine($"Complex Num 2: {c2}");
+            //Console.WriteLine($"Sum: {sum}");
+            //Console.WriteLine($"Difference: {difference}");
+
+
+            #endregion
+
+            #region 4. 4-Create a base class named Employee with method Work those prints "Employee is working".
+            // Create a derived class named Manager that overrides the Work method to print "Manager is managing". 
+            // Ensure that the Manager class also calls the Work method of the Employee class within its overridden method.
+
+
+   
+      
+
+      
+             
+                Employee emp = new Employee();
+                emp.Work();
 
               
-                //ComplexNumber difference = c1 - c2;
+                Manager mgr = new Manager();
+                mgr.Work();
+       
 
-            
-                //Console.WriteLine($"Complex Num 1: {c1}");
-                //Console.WriteLine($"Complex Num 2: {c2}");
-                //Console.WriteLine($"Sum: {sum}");
-                //Console.WriteLine($"Difference: {difference}");
-            
-      
-    #endregion
-
-    #region
 
 
     #endregion
