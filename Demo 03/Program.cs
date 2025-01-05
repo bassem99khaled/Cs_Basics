@@ -346,7 +346,44 @@ namespace Demo_03.Operators_Overloading
 
 
                 #endregion
+
+
+                #region More Practice on Binding
+
+                //TypeA typeA = new TypeC(1 , 2,3);
+                //typeA.A = 11;
+                ////typeA.B = 22;
+                ////TypeA.C = 33;
+
+                //typeA.MyFun01(); // Static Binding Method => I am Base [Parent]
+                //typeA.MyFun02(); // Dynamic Binded Method => TypeC : A =11 , B = 2 , C = 3
+
+
+                //TypeB typeB = new TypeC(1, 2, 3);
+                //typeB.A = 11;
+                //typeB.B = 22;
+                ////TypeA.C = 33;
+
+                //typeB.MyFun01(); // Static Binding Method => I am Derived [Child]
+                //typeB.MyFun02(); // Dynamic Binded Method => TypeC : A =11 , B = 22 , C  = 3
+
+
+                //TypeA typeA = new typeE(1, 2, 3, 4, 5); // InDierct Parent
+                //TypeB typeB = new typeE(1, 2, 3, 4, 5); // InDierct Parent
+                //TypeC typeC = new typeE(1, 2, 3, 4, 5); // InDierct Parent
+
+                //typeA.MyFun02(); // TypeC : A =1 , B=2 , C =3 
+
+                //typeB.MyFun02(); // TypeC : A =1 , B=2 , C =3 
+
+                //typeC.MyFun02(); // TypeC : A =1 , B=2 , C =3 
+
+                //TypeD typeD = new TypeE(1,2,3,4,5); // Dierct parent
+
+                //TypeD.MyFun02(); // TypeE : A =1 ,B =2 , C =3 , D =4 , E = 5
+
+                #endregion
             }
-            }
+        }
         }
     }

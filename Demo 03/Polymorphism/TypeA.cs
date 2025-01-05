@@ -16,8 +16,8 @@ namespace Demo_03.Polymorphism
         {
 
             this.A = A;
-            }
-                
+        }
+
         public void MyFun01()
         {
             Console.WriteLine("MyFun01 => I am Base [Parent]");
@@ -52,8 +52,75 @@ namespace Demo_03.Polymorphism
         {
             Console.WriteLine($" MyFun02 => TypeB: A = {A} , B = {B}");
         }
-       
+
         #endregion
+
     }
 
+    class TypeC : TypeB
+    {
+        public int C { get; set; }
+
+
+        public TypeC(int A, int B, int C) : base(A , B)
+        {
+            this.C = C;
+        }
+
+        public void MyFun01()
+        {
+            Console.WriteLine("I am Derived [GrandChild]");
+
+        }
+
+
+        public override void MyFun02()
+        {
+            Console.WriteLine($"TypeC : A = {A} , B = {B} , C = {C}");
+        }
+
+    }
+
+    class TypeD : TypeC
+    {
+
+        public int D { get; set; }
+
+        public TypeD(int A, int B, int C, int D) : base(A, B, C)
+        {
+            this.D = D;
+        }
+        public new void MyFun01()
+        {
+            Console.WriteLine("");
+        }
+
+        public new void MyFun02()
+        {
+            Console.WriteLine($"TypeC : A = {A} , B = {B} , C = {C} , D = {D}");
+        }
+
+
+
+
+    }
+
+    class typeE : TypeD
+    {
+        public int E { get; set; }
+
+        public typeE(int A, int B, int C, int D, int E) : base(A, B, C, D)
+        {
+            this.E = E;
+        }
+
+        public new void MyFun02()
+        {
+            Console.WriteLine($"TypeE : A = {A} , B = {B} , C = {C} , D = {D} , E = {E}");
+
+        }
+
+    
+    
+    }
 }
