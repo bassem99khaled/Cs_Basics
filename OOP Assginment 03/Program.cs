@@ -143,24 +143,47 @@ namespace OOP_Assginment_03
 
 
 
-        
-           
-                //Duration duration1 = new Duration(1, 120, 360);
-                //duration1.DisplayDuration(); 
 
-    
-                //Duration duration2 = new Duration();
-                //duration2.DisplayDuration(); 
+
+            //Duration duration1 = new Duration(1, 120, 360);
+            //duration1.DisplayDuration(); 
+
+
+            //Duration duration2 = new Duration();
+            //duration2.DisplayDuration(); 
+
+
+
+
+
+            #endregion
+
+
+
+            #region 2-Override All System. Object Members (To String, Equals,GetHasCode) 
+
       
+        
 
+       
+               
+                //Duration duration1 = new Duration(1, 120, 360);
+                //Duration duration2 = new Duration(2, 2, 0);
 
+              
+                //Console.WriteLine("Duration 1:");
+                //duration1.DisplayDuration();
 
+                //Console.WriteLine("\nDuration 2:");
+                //duration2.DisplayDuration();
 
-    #endregion
+             
+                //Console.WriteLine(" durations equal? " + duration1.Equals(duration2));
 
-
-
-    #region
+         
+                //Console.WriteLine("HashCode for Duration 1: " + duration1.GetHashCode());
+                //Console.WriteLine("HashCode for Duration 2: " + duration2.GetHashCode());
+        
 
     #endregion
 
