@@ -108,28 +108,55 @@ namespace OOP_Assginment_03
             //  And explain the difference between using override and new (using binding behavior)	 
 
 
-      
-      
-             
-                //BaseClass baseObj = new BaseClass();
-                //baseObj.DisplayMessage(); 
-
-                //BaseClass derived1 = new DerivedClass1();
-                //derived1.DisplayMessage();
-
-               
-                //BaseClass derived2 = new DerivedClass2();
-                //derived2.DisplayMessage();
-
-          
-                //DerivedClass2 derived2Direct = new DerivedClass2();
-                //derived2Direct.DisplayMessage(); 
-        
 
 
-    #endregion
+
+            //BaseClass baseObj = new BaseClass();
+            //baseObj.DisplayMessage(); 
+
+            //BaseClass derived1 = new DerivedClass1();
+            //derived1.DisplayMessage();
 
 
-}
+            //BaseClass derived2 = new DerivedClass2();
+            //derived2.DisplayMessage();
+
+
+            //DerivedClass2 derived2Direct = new DerivedClass2();
+            //derived2Direct.DisplayMessage(); 
+
+
+//            Binding Behavior:
+
+            //override: Supports runtime polymorphism[dynamic binding]. The method call depends on the actual object type, not the reference type.
+            
+            //new: [static binding]. The method call depends on the reference type, not the object type.
+
+
+            #endregion
+
+        #region
+
+
+
+        #endregion
+
+
+
+        #region
+
+        #endregion
+
+
+        #region
+
+
+        #endregion
+
+        #region
+
+        #endregion
+
+        }
     }
 }
