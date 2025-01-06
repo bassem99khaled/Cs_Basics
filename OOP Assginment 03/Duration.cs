@@ -12,7 +12,7 @@ namespace OOP_Assginment_03
         public int Hours { get; set; }
         public int Minutes { get; set; }
         public int Seconds { get; set; }
-        //
+        
         #endregion
 
         #region Constructors
