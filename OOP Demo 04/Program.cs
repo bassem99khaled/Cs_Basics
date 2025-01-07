@@ -30,7 +30,7 @@ namespace OOP_Demo_04
             #endregion
 
             #region Interface_Example_02
-          
+
 
             //static void PrintTenNumbersFromSeries(Iseries series)
 
@@ -71,9 +71,56 @@ namespace OOP_Demo_04
             //flyable.Forward();
 
 
+            #endregion
+
+            #region Shallow Copy Vs Deep Copy
+
+            #region Shallow Copy
+
+            //int[] arr01 = [1, 2 , 3];
+            //int[] arr02 = {4 , 5, 6};
+
+            //Console.WriteLine($"arr01.GetHashCode = {arr01.GetHashCode()}");
+            //Console.WriteLine($"arr01.GetHashCode = {arr02 .GetHashCode()}");
+
+
+
+            //arr02 = arr01; Console.WriteLine("After shadow Copy ------ >");
+
+            //arr02 = (int[])arr01.Clone(); Console.WriteLine("Deep Copy --> Arr02 = (int[]) Arr01");
+
+            // Clone Method : will Genrate New Object With New and DIFFERENT Identity 
+            //              : This Object will have the same State [Data] of the Caller Object
 
             #endregion
 
+
+            ///Shallow Copy
+            /// this Object [ 1 , 2 , 3 ] Has 2 Reference [Arr01 , Arr02] (اسمين دلع ).
+            /// this object [ 4 , 5, 6 ] Became UnReachable Object.
+            /// Shallow Copy تاثير سطحي
+
+
+            #region Deep Copy
+            //Console.WriteLine($"arr01.GetHashCode = {arr01.GetHashCode()}");
+            //Console.WriteLine($"arr01.GetHashCode = {arr02.GetHashCode()}");
+
+            //arr02[0] = 100;
+
+
+
+
+            //Console.WriteLine("----------------------");
+            //foreach (int number in arr01)
+            //    Console.WriteLine(number);
+            //Console.WriteLine("*************");
+            //foreach (int number in arr01)
+            //    Console.WriteLine(number);
+
+            #endregion
+
+
+            #endregion
         }
     }
 }
