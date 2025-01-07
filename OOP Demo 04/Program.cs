@@ -1,6 +1,6 @@
 ﻿using OOP_Demo_04.Interface_Example_01;
 using OOP_Demo_04.InterFace_Example_02;
-
+using OOP_Demo_04.InterFace_Example_03;
 namespace OOP_Demo_04
 {
     internal class Program
@@ -58,8 +58,17 @@ namespace OOP_Demo_04
 
             #endregion
 
-
             #region InterFace_exmaple_03
+
+             AirPlane airplane = new AirPlane();
+            airplane.Speed = 400;
+            //airplane.Forward();
+
+            ImoveAble moveable = airplane;
+            moveable.Forward();
+
+            IFlyAble flyable = airplane;
+            flyable.Forward();
 
 
 
