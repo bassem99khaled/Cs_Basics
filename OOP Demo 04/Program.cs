@@ -60,15 +60,15 @@ namespace OOP_Demo_04
 
             #region InterFace_exmaple_03
 
-             AirPlane airplane = new AirPlane();
-            airplane.Speed = 400;
-            //airplane.Forward();
+            // AirPlane airplane = new AirPlane();
+            //airplane.Speed = 400;
+            ////airplane.Forward();
 
-            ImoveAble moveable = airplane;
-            moveable.Forward();
+            //ImoveAble moveable = airplane;
+            //moveable.Forward();
 
-            IFlyAble flyable = airplane;
-            flyable.Forward();
+            //IFlyAble flyable = airplane;
+            //flyable.Forward();
 
 
 
