@@ -121,6 +121,31 @@ namespace OOP_Demo_04
 
 
             #endregion
+
+            #region Why Clone Method Description Says Makes A shallow copy ?
+
+
+            //string[] Name01 = ["Amr", "Mona"];
+            //string[] Name02 = ["Ahmed", "Yassmin"];
+
+            //Console.WriteLine($"Name01.GetHashCode() = {Name01.GetHashCode()}");
+
+            //Console.WriteLine($"Name02.GetHashCode() = {Name02.GetHashCode()}");
+
+            //Name02 = (string[])Name01.Clone(); Console.WriteLine("After Deep Copy --> Names02= (sting[])Name01.Colne  ");
+            ////Clone Method : will Genrate New Object with New and Different Identity
+            ////              : This Object will have the same state [data] of the original object [shallow copy]
+
+
+            //Console.WriteLine($"Name01.GetHashCode() = {Name01.GetHashCode()}");
+
+            //Console.WriteLine($"Name02.GetHashCode() = {Name02.GetHashCode()}");
+
+            //Name02[0] = new string ("Khaled");
+
+            //Console.WriteLine (Name01[0]); // Amr
+            #endregion
+
         }
     }
 }
