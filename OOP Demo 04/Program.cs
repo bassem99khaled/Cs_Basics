@@ -148,7 +148,7 @@ namespace OOP_Demo_04
             //Console.WriteLine (Name01[0]); // Amr
             #endregion
 
-            #region ICloneable
+            #region ICloneable 
 
             //Employee employee01 = new Employee() { Id = 10, Name = " Ahmed", Salary = 8_000, department = new Department() { Code = 1001, Title = " Salary" } };
             //Employee employee02 = new Employee() { Id = 20, Name = "Osama", Salary = 5_000, department = new Department() { Code = 2002, Title = "HR" } };
@@ -178,8 +178,39 @@ namespace OOP_Demo_04
 
             //     Console.WriteLine($"Employee01 = {employee01}");
             //     Console.WriteLine($"Employee02 = {employee02}");
-                 #endregion
+            #endregion
 
-             }
+            #region ICompareable & IComparer
+
+           // int[] Number = [9, 3, 1, 2, 5, 6, 7, 8, 43, 5];
+
+           // Array.Sort(Number);
+
+           // foreach (int number in Number)
+           // {
+           //     Console.WriteLine(number);
+           // }
+
+
+           // Employee[] employees = {
+           //    new Employee() { Id = 10 , Name = "Ahmed" , Salary = 8_000},
+           //    new Employee() { Id = 20 , Name = "Omar" , Salary = 5_000},
+           //    new Employee() { Id = 30 , Name = "Samir" , Salary = 6_000},
+           //    new Employee() { Id = 40 , Name = "Bassem" , Salary = 3_000},
+           // };
+
+           // Array.Sort(employees , new EmployeeComparer());
+
+           //// int Result = employees[0].CompareTo("Hamada");
+
+
+           // foreach (Employee employee in employees) 
+           // Console.WriteLine(employees);
+
+            #endregion
+
+
+
+        }
     }
 }

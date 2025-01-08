@@ -7,9 +7,28 @@ using System.Threading.Tasks;
 
 namespace OOP_Demo_04.Built_in_InterFace
 {
-    internal class Employee :ICloneable
+    internal class Employee : ICloneable, IComparable
     {
-        public int Id {  get; set; }
+        // +ve : this.Salary > obj.Salary
+        // -ve : this.Salary < obj.Salary
+        // 0   : this.Salary = obj.Salary
+        int IComparable.CompareTo(object? obj)
+        {
+            Employee Other = (Employee?) obj; // Explicit Casting
+
+            return - this.Salary.CompareTo(Other?.Salary);  // (-) Make desc sorting
+                                                            // UNpair Casting
+            ///if (Other != null)
+            ///    return 1;
+            ///if(this.Salary > Other.Salary)
+            ///    return 1;
+            ///else if(this.Salary < Other.Salary)
+            ///    return -1;
+            ///return 0;
+        }
+    
+
+    public int Id {  get; set; }
 
         public string? Name { get; set; }
 
