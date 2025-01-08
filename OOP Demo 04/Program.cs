@@ -1,6 +1,8 @@
 ﻿using OOP_Demo_04.Interface_Example_01;
 using OOP_Demo_04.InterFace_Example_02;
 using OOP_Demo_04.InterFace_Example_03;
+using OOP_Demo_04.Built_in_InterFace;
+using System.Net.Http.Headers;
 namespace OOP_Demo_04
 {
     internal class Program
@@ -146,6 +148,38 @@ namespace OOP_Demo_04
             //Console.WriteLine (Name01[0]); // Amr
             #endregion
 
-        }
+            #region ICloneable
+
+            //Employee employee01 = new Employee() { Id = 10, Name = " Ahmed", Salary = 8_000, department = new Department() { Code = 1001, Title = " Salary" } };
+            //Employee employee02 = new Employee() { Id = 20, Name = "Osama", Salary = 5_000, department = new Department() { Code = 2002, Title = "HR" } };
+
+            //     Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode}");
+            //     Console.WriteLine($"employee02.GetHashCode() = {employee02.GetHashCode}");
+
+            //     employee02 = (Employee)employee02.Clone(); // Deep copy using Clone
+
+            //// Clone Method : this Method Generates New Object with New And Different Identity 
+            ////              : this object will habe the same state [Data] of the Caller Object
+
+            //Employee02 = new Employee(employee01);
+
+
+            //if(employee02.department is not null)
+            //employee02.department.Title = " new";
+
+            //     Console.WriteLine("After Deep Copy");
+
+            //     Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode}");
+            //     Console.WriteLine($"employee02.GetHashCode() = {employee02.GetHashCode}");
+
+
+            //     Console.WriteLine("**********************");
+
+
+            //     Console.WriteLine($"Employee01 = {employee01}");
+            //     Console.WriteLine($"Employee02 = {employee02}");
+                 #endregion
+
+             }
     }
 }
