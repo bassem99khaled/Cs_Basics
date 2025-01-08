@@ -1,4 +1,7 @@
 ﻿using System.Runtime.Intrinsics.X86;
+using static System.Net.Mime.MediaTypeNames;
+using OOP_Assignment_04.InterFace;
+using System.Runtime.InteropServices;
 
 namespace OOP_Assignment_04
 {
@@ -14,7 +17,7 @@ namespace OOP_Assignment_04
 
             //b) To define a blueprint for a class
             #endregion
-   
+
             #region Question 2:
             // Which of the following is NOT a valid access modifier for interface members in C#?
             //a) private
@@ -24,7 +27,7 @@ namespace OOP_Assignment_04
 
 
             #endregion
-          
+
             #region Question 3:
             //Can an interface contain fields in C#?
 
@@ -111,16 +114,61 @@ namespace OOP_Assignment_04
             #endregion
 
             #region Question 10:
-                    // How can a C# class implement multiple interfaces?
+            // How can a C# class implement multiple interfaces?
 
 
-                // c) By separating interface names with commas
+            // c) By separating interface names with commas
 
+
+
+
+            #endregion
+
+
+
+            #endregion
+
+
+
+            #region Parot 02
+
+
+            #region Question 01:
+            //Define an interface named IShape with a property Area and a method DisplayShapeInfo.
+            //Create two interfaces, ICircle and IRectangle, that inherit from IShape.Implement these
+            //interfaces in classes Circle and Rectangle. Test your implementation
+            //by creating instances of both classes and displaying their shape information.
+
+            
+     
+       
+     
+            
+                //ICircle circle = new circle(10);
+                //circle.DisplayShapeInfo();
+
+            
+                //IRectangle rectangle = new rectangle(7, 9);
+                //rectangle.DisplayShapeInfo();
+          
 
 
 
         #endregion
 
+
+
+        #region
+
+
+
+        #endregion
+
+
+        #region
+
+
+        #endregion
 
 
         #endregion
