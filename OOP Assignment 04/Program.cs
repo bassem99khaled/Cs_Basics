@@ -2,7 +2,9 @@
 using static System.Net.Mime.MediaTypeNames;
 using OOP_Assignment_04.InterFace;
 using System.Runtime.InteropServices;
-
+using System.Data;
+using System.Net;
+using OOP_Assignment_04.Part_02_Q_02;
 namespace OOP_Assignment_04
 {
     internal class Program
@@ -139,39 +141,88 @@ namespace OOP_Assignment_04
             //interfaces in classes Circle and Rectangle. Test your implementation
             //by creating instances of both classes and displaying their shape information.
 
-            
-     
-       
-     
-            
-                //ICircle circle = new circle(10);
-                //circle.DisplayShapeInfo();
 
-            
-                //IRectangle rectangle = new rectangle(7, 9);
-                //rectangle.DisplayShapeInfo();
+
+
+
+
+            //ICircle circle = new circle(10);
+            //circle.DisplayShapeInfo();
+
+
+            //IRectangle rectangle = new rectangle(7, 9);
+            //rectangle.DisplayShapeInfo();
+
+
+
+
+            #endregion
+
+
+
+
+        #region Question 02:
+         //  In this example, we start by defining the IAuthenticationService
+         //  interface with two methods: AuthenticateUser and AuthorizeUser.
+         //  The BasicAuthenticationService class implements this interface and provides the specific implementation for these methods.
+         // In the BasicAuthenticationService class
+         // the AuthenticateUser method compares the provided username and password with the stored credentials.
+         // It returns true if the user is authenticated and false otherwise.
+         // The AuthorizeUser method checks if the user with the given username
+         // has the specified role.It returns true if the user is authorized and false otherwise.
+         //  In the Main method, we create an instance of the BasicAuthenticationService
+         //  class and assign it to the authService variable of type IAuthenticationService.
+         //  We then call the AuthenticateUser and AuthorizeUser methods using this interface reference.
+         //This implementation allows you to switch the authentication service implementation easily
+         //by creating a new class that implements the IAuthenticationService interface and providing
+         //the desired logic for authentication and authorization.
+
+
+
           
 
+     
+   
+            //IAuthenticationService authService = new BasicAuthenticationService();
+
+          
+            //string username = "admin";
+            //string password = "admin123";
+            //if (authService.AuthenticateUser(username, password))
+            //{
+              
+            //    string role = "Admin";
+            //    authService.AuthorizeUser(username, role);
+            //}
 
 
-        #endregion
+            //username = "user";
+            //password = "wrongpassword";
+            //authService.AuthenticateUser(username, password);
+
+           
+
+            //username = "user";
+            //password = "user123";
+            //if (authService.AuthenticateUser(username, password))
+            //{
+            //    string role = "Admin";
+            //    authService.AuthorizeUser(username, role);
+            //}
+     
 
 
 
-        #region
+    #endregion
 
 
-
-        #endregion
-
-
-        #region
+    #region
 
 
-        #endregion
+    #endregion
 
 
-        #endregion
-    }
+    #endregion
+}
 }
 }
