@@ -21,8 +21,14 @@ namespace OOP_Demo_05
 
         // abstract method = Virtual method without Implmentation
         public abstract decimal CalcArea();
-    }
 
+        protected Shape(decimal Dim01,decimal Dim02)
+        {
+this.Dim01 = Dim01;
+            this.Dim02 = Dim02;
+        }
+    }
+    
 
     abstract class  RectBase : Shape
 
@@ -91,7 +97,7 @@ namespace OOP_Demo_05
         }
 
         //Concrete Class
-        class Cicle : Shape
+        class Cicle : Shape //, IDraw3D , IDraw2D
         {
             public Cicle(decimal Radius)
             {
@@ -106,6 +112,35 @@ namespace OOP_Demo_05
             {
                 return 3.14M * this.Dim01 * this.Dim02;
             }
+        }
+
+        class Triangle : Shape
+        {
+
+            public decimal Dim03 { get; set; }
+
+            public override decimal Perimeter => throw new NotImplementedException();
+
+            public Triangle(decimal Dim01, int Dim02, int Din03) : base(Dim01 ,Dim02)
+            {
+                this.Dim01 = Dim01;
+                this.Dim02 = Dim02;
+                this.Dim03 = Din03;
+            }
+            private interface IDraw2D
+            {
+
+            }
+
+            interface IDraw3D
+            {
+            }
+
+            public override decimal CalcArea()
+            {
+                throw new NotImplementedException();
+            }
+
         }
     }
 }

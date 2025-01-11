@@ -2,11 +2,12 @@
 
 using System.Security.Authentication;
 using OOP_Demo_05;
-{
-    internal class Program
+using OOP_Demo_05.Static;
+
+internal class Program
     {
-        static void Main(string[] args)
-        {
+    static void Main(string[] args)
+    {
         #region Abstract [ Class , Method , Property ]
 
         ////Shape shape = new Shape();
@@ -34,7 +35,15 @@ using OOP_Demo_05;
         //Console.WriteLine($" Cicrle Area = {circleArea}");
         //Console.WriteLine($" Rect Peri = {circlePeri}");
 
-            #endregion
-        }
+        #endregion
+
+        Utility U01 = new Utility(1, 2);
+
+        Console.WriteLine(U01.CmToInch);
+
+
+
+
     }
-}
+    }
+
