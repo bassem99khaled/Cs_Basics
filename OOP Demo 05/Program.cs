@@ -3,6 +3,7 @@
 using System.Runtime.CompilerServices;
 using System.Security.Authentication;
 using OOP_Demo_05;
+using OOP_Demo_05.Sealed;
 using OOP_Demo_05.Static;
 
 internal class Program
@@ -63,6 +64,19 @@ internal class Program
         // Guid
 
         #endregion
+
+        #region Sealed [ Class , Method , Property ]
+
+        //static void CalcPayment(PaymentProcessor processor)
+        //{
+        //    processor.ProccessPayment(100);
+        //}
+
+        ImmutableString str = new ImmutableString("Ahmed");
+        str = new ImmutableString("Bassem");
+
+        #endregion
+
     }
 }
 
