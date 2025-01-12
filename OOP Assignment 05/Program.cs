@@ -1,6 +1,8 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Drawing;
 using OOP_Assignment_05.Project_01;
+using OOP_Assignment_05.Project_02;
+
 namespace OOP_Assignment_05
 {
     internal class Program
@@ -63,7 +65,7 @@ namespace OOP_Assignment_05
             // }
 
 
-           
+
             //static Point3D ReadPointFromUser(string pointName)
             //{
             //    int x, y, z;
@@ -77,7 +79,7 @@ namespace OOP_Assignment_05
             //    return new Point3D(x, y, z);
             //}
 
-            
+
 
 
             //static int ReadCoordinate(string coordinateName)
@@ -94,8 +96,33 @@ namespace OOP_Assignment_05
             //            Console.WriteLine("Invalid input. Please enter an integer.");
             //    }
             //    return value;
-           
 
+
+
+
+
+            #endregion
+
+            #region Second Project:
+            //      Define Class Maths that has four methods: Add, Subtract, Multiply, and Divide, each of them takes two parameters.Call each method in Main().
+            //    Modify the program so that you do not have to create an instance of class to call the four methods.
+
+         
+      
+
+        
+               // double num1 = 10;
+               // double num2 = 5;
+
+             
+               // Console.WriteLine($"Addition: {Maths.Add(num1, num2)}");         // Output: 15
+               // Console.WriteLine($"Subtraction: {Maths.Subtract(num1, num2)}"); // Output: 5
+               // Console.WriteLine($"Multiplication: {Maths.Multiply(num1, num2)}"); // Output: 50
+               // Console.WriteLine($"Division: {Maths.Divide(num1, num2)}");      // Output: 2
+
+               //// testing the error
+               // Console.WriteLine($"Division by Zero: {Maths.Divide(num1, 0)}"); 
+          
 
 
 
