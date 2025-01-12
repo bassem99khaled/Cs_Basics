@@ -3,8 +3,10 @@
 using System.Runtime.CompilerServices;
 using System.Security.Authentication;
 using OOP_Demo_05;
+using OOP_Demo_05.Partial;
 using OOP_Demo_05.Sealed;
 using OOP_Demo_05.Static;
+
 
 internal class Program
     {
@@ -76,6 +78,28 @@ internal class Program
         str = new ImmutableString("Bassem");
 
         #endregion
+
+        #region Partial [ Class , Method , Property ]
+
+        //Employee employee = new Employee()
+        //{
+        //    Id  = 1234, 
+        //        Name = " Ahmed",
+        //        Age = 20 ,
+        //        Address = "Dokki",
+        //};
+
+
+        #endregion
+
+        #region Class Types Summary
+        /// 1. Concrete Class
+        /// 2. Static   Class just helper class
+        /// 3. Abstract Class 
+        /// 4. Sealed   Class
+        /// 5. Partial  Class
+        /// 
+#endregion
 
     }
 }
