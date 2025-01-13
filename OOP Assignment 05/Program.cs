@@ -2,7 +2,15 @@
 using System.Drawing;
 using OOP_Assignment_05.Project_01;
 using OOP_Assignment_05.Project_02;
-
+using static System.Formats.Asn1.AsnWriter;
+using System.ComponentModel;
+using System.Diagnostics.Metrics;
+using System.Diagnostics;
+using System.IO;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+using OOP_Assignment_05.Project_03;
 namespace OOP_Assignment_05
 {
     internal class Program
@@ -107,23 +115,147 @@ namespace OOP_Assignment_05
             //      Define Class Maths that has four methods: Add, Subtract, Multiply, and Divide, each of them takes two parameters.Call each method in Main().
             //    Modify the program so that you do not have to create an instance of class to call the four methods.
 
-         
+
+
+
+
+            // double num1 = 10;
+            // double num2 = 5;
+
+
+            // Console.WriteLine($"Addition: {Maths.Add(num1, num2)}");         // Output: 15
+            // Console.WriteLine($"Subtraction: {Maths.Subtract(num1, num2)}"); // Output: 5
+            // Console.WriteLine($"Multiplication: {Maths.Multiply(num1, num2)}"); // Output: 50
+            // Console.WriteLine($"Division: {Maths.Divide(num1, num2)}");      // Output: 2
+
+            //// testing the error
+            // Console.WriteLine($"Division by Zero: {Maths.Divide(num1, 0)}"); 
+
+
+
+
+            #endregion
+
+            #region Third Project:
+            //            You are tasked with designing a system for an e-commerce platform
+            //            that calculates discounts for different types of users and products.
+            //            This system should utilize abstraction and include the following parts:
+
+
+            //            Part 1: Abstract Discount Class
+            //            1.Create an abstract class Discount with:
+            //o An abstract method CalculateDiscount(decimal price, int quantity)
+            //that returns the discount amount based on the original price and quantity.
+            //o   A Name property to store the type of discount.
+            //Part 2: Specific Discounts
+            //2.	Implement the following concrete discount classes:
+            //o PercentageDiscount:
+            //	Accepts a percentage (e.g., 10%).
+            //	Formula: Discount Amount = Price×Quantity×(Percentage/100)
+            //o FlatDiscount:
+            //	Accepts a fixed amount to be deducted(e.g., $50).
+            //	Formula: Discount Amount = Flat Amount×min(Quantity, 1)
+            //o   BuyOneGetOneDiscount:
+            //	Applies a 50 % discount if the quantity is greater than 1.
+            //	Formula: Discount Amount = (Price / 2)×(Quantity÷2)
+            //Part 3: Discount Applicability
+            //3.Create an abstract class User with:
+            //o A Name property to store the user name.
+            //o An abstract method GetDiscount() that returns a Discount object.
+            //4.	Implement the following specific user types:
+            //o RegularUser: Applies a PercentageDiscount of 5%.
+            //o PremiumUser: Applies a FlatDiscount of $100.
+            //o GuestUser: No discount is applied
+            //Part 4: Integration
+            //5.	Write a program that:
+            //o Ask  the user to input their type(Regular, Premium, or Guest).
+            //o Allows the user to input product details(price and quantity).
+            //o Calculates and displays the total discount and final price after applying the appropriate discount.
+
+
+
       
+            //    Console.WriteLine("Welcome to the E-Commerce Discount System!");
 
-        
-               // double num1 = 10;
-               // double num2 = 5;
+                
+            //    Console.Write("Enter your user type (Regular, Premium, Guest): ");
+            //    string userType = Console.ReadLine().Trim().ToLower();
 
-             
-               // Console.WriteLine($"Addition: {Maths.Add(num1, num2)}");         // Output: 15
-               // Console.WriteLine($"Subtraction: {Maths.Subtract(num1, num2)}"); // Output: 5
-               // Console.WriteLine($"Multiplication: {Maths.Multiply(num1, num2)}"); // Output: 50
-               // Console.WriteLine($"Division: {Maths.Divide(num1, num2)}");      // Output: 2
+            //    Console.Write("Enter your name: ");
+            //    string userName = Console.ReadLine();
 
-               //// testing the error
-               // Console.WriteLine($"Division by Zero: {Maths.Divide(num1, 0)}"); 
+            //    User user;
+
+                
+            //    switch (userType)
+            //    {
+            //        case "regular":
+            //            user = new RegularUser(userName);
+            //            break;
+            //        case "premium":
+            //            user = new PremiumUser(userName);
+            //            break;
+            //        case "guest":
+            //            user = new GuestUser(userName);
+            //            break;
+            //        default:
+            //            Console.WriteLine("Invalid user type. Defaulting to Guest User.");
+            //            user = new GuestUser(userName);
+            //            break;
+            //    }
+
+              
+            //    decimal price = ReadDecimalInput("Enter product price: ");
+            //    int quantity = ReadIntInput("Enter product quantity: ");
+
+               
+            //    Discount discount = user.GetDiscount();
+            //    decimal discountAmount = discount != null ? discount.CalculateDiscount(price, quantity) : 0;
+            //    decimal totalPrice = (price * quantity) - discountAmount;
+
+               
+            //    Console.WriteLine($"User: {user.Name} , {userType.ToUpper()}");
+            //    Console.WriteLine($"Product Price: ${price}");
+            //    Console.WriteLine($"Quantity: {quantity}");
+
+            //    if (discount != null)
+            //    {
+            //        Console.WriteLine($"Applied Discount: {discount.Name}");
+            //        Console.WriteLine($"Discount Amount: ${discountAmount}");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("No Discount Applied.");
+            //    }
+
+            //    Console.WriteLine($"Final Price: ${totalPrice}");
+            //}
+
           
+            //static decimal ReadDecimalInput(string prompt)
+            //{
+            //    decimal value;
+            //    while (true)
+            //    {
+            //        Console.Write(prompt);
+            //        if (decimal.TryParse(Console.ReadLine(), out value) && value >= 0)
+            //            return value;
+            //        Console.WriteLine("Invalid input.");
+            //    }
+            //}
 
+          
+            //static int ReadIntInput(string prompt)
+            //{
+            //    int value;
+            //    while (true)
+            //    {
+            //        Console.Write(prompt);
+            //        if (int.TryParse(Console.ReadLine(), out value) && value > 0)
+            //            return value;
+            //        Console.WriteLine("Invalid input.");
+            //    }
+          
 
 
         #endregion
